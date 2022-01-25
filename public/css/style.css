@@ -144,7 +144,7 @@ main {
     background: #333;
     border-radius: 3px;
     margin-top: 30px;
-    margin-left: -140px;
+    margin-left: -140px 0;
 }
 #thead {
     background: #ebeef1;
@@ -197,10 +197,10 @@ tbody td, tr {
         text-align: center;
     }
     main {
-        width: 60%;
+        width: 70%;
     }
     #table {
-        width: 100%;
+        width: 400px;
         height: 400px;
         background: #333;
         border-radius: 3px;
