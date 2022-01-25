@@ -1,0 +1,282 @@
+/*Author: Pedro Parro*/
+/*fonts google*/
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Molle:ital@1&family=Romanesco&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Charm', cursive;
+}
+body {
+    width: 100%;
+    background-image: url(../images/back.jpg);
+}
+div.h2 {
+    width: 100%;
+    background: rgb(151, 87, 3);
+    padding: 10px;
+    text-align: center;
+    color: rgb(14, 3, 0);
+    font-weight: bold;
+    font-size: 25px;
+}
+#name-session {
+    padding: 10px 0;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+h3 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(14, 3, 0);
+}
+hr {
+    width: 400px;
+    height: 2px;
+    background: rgb(14, 3, 0);
+    border: 0;
+}
+/*ALERT*/
+div#alert {
+    background: rgb(248, 3, 3);
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    padding: 5px;
+}
+
+div.login {
+    background: #fff;
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    box-shadow: inset 0 0 1em rgb(236, 233, 216), 0 0 1em white;
+}
+input {
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    background: #fff;
+    padding-left: 5px;
+    border: 1px solid #d3dae0;
+    border-radius: 3px;
+    outline: 0;
+}
+label {
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(14, 3, 0);
+    margin-left: 0px;
+}
+.login-form {
+   margin: 10px 0;
+   top: 50%;
+   left: 50%;
+   transform: translate(25%, 25%);
+}
+.login-form i {
+    margin: 10px 0;
+    margin-left: -25px;
+ }
+#submit {
+    width: 100px;
+    height: 35px;
+    margin-left: 150px;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 4px 0;
+    text-align: center;
+    background: rgb(151, 87, 3);
+    color: rgb(14, 3, 0);
+    border-radius: 3px;
+    border: 0;
+    outline: 0;
+}
+#submit:hover {
+    background-color: rgb(14, 3, 0);
+    color: rgb(151, 87, 3);
+    transition: .5s;
+}
+/*BUTTON RETURN*/
+#btn-return {
+    width: 100%;
+    color: rgb(14, 3, 0);
+    text-align: right;
+}
+#return {
+    width: 100px;
+    height: 35px;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 4px 0;
+    text-align: center;
+    background: rgb(151, 87, 3);
+    color: rgb(14, 3, 0);
+    border-radius: 3px;
+    border: 0;
+    outline: 0;
+}
+#return a {
+    background: rgb(151, 87, 3);
+    color: rgb(14, 3, 0);
+    text-decoration: none;
+}
+
+/*DASHBOARD*/
+main {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#table {
+    width: 1000px;
+    background: #333;
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-left: -140px;
+}
+#thead {
+    background: #ebeef1;
+}
+thead td {
+    color: brown;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+}
+#tbody {
+    background: #fff;
+}
+tbody td, tr {
+    border-bottom: 1px solid #d3dae0;
+    border: 1px solid rgb(3, 0, 0);
+    text-align: center;
+    font-size: 16px;
+}
+/*MODO RESPONSIVE*/
+/*500px*/
+@media screen and (max-width: 500px) {
+    body {
+        width: 100%;
+    }
+    div.h2 {
+        width: 100%;
+        padding-top: 25px;
+    }
+    hr {
+        width: 270px;
+    }
+    div.login {
+        background: #fff;
+        width: 320px;
+        height: 400px;
+    }
+    .login-form {
+        width: 200px;
+        margin: 10px 0px;   
+        margin-left: -5%;
+    }
+    #submit {
+        width: 100px;
+        height: 35px;
+        margin-left: 32%;
+        font-weight: 600;
+        font-size: 20px;
+        padding: 2px 0;
+        text-align: center;
+    }
+    main {
+        width: 60%;
+    }
+    #table {
+        width: 100%;
+        height: 400px;
+        background: #333;
+        border-radius: 3px;
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+    #thead {
+        background: #ebeef1;
+    }
+    thead td {
+        color: brown;
+        font-size: 12px;
+        padding: 10px;
+        font-weight: bold;
+    }
+    #tbody {
+        background: #fff;
+    }
+    tbody td, tr {
+        border-bottom: 1px solid #d3dae0;
+        border: 1px solid rgb(3, 0, 0);
+        text-align: center;
+        font-size: 12px;
+    }
+    #return {
+        margin-left: 70%;
+    }
+  
+    
+}
+/*MODO RESPONSIVE*/
+/*501px a 999px*/
+@media screen and (min-width: 501px) and (max-width: 999px){
+    body {
+        width: 100%;
+    }
+    div.h2 {
+        width: 100%;
+        padding-top: 25px;
+    }
+    hr {
+        width: 400px;
+    }
+    div.login {
+        background: #fff;
+        width: 500px;
+        height: 500px;
+    }
+    .login-form {
+        width: 400px;
+        margin: 25px 0px;   
+        margin-left: -7%;
+    }
+    input {
+        width: 250px;
+        border: 1px solid #d3dae0;
+    }
+    #submit {
+        width: 150px;
+        height: 35px;
+        margin-left: 31%;
+        font-weight: 600;
+        font-size: 20px;
+        padding: 2px 0;
+        text-align: center;
+    }
+    main {
+        width: 100%;
+    }
+    #table {
+        width: 90%;
+        height: 700px;
+        background: #333;
+        border-radius: 3px;
+        margin-top: 30px;
+        margin-left: -100px 0;
+    }
+    
+}
